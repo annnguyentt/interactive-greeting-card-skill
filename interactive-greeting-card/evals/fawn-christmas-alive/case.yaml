@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: fawn-christmas-alive
+expected_outcome: |
+  A single self-contained HTML card page built with the skill's make_card.py from a card JSON with the paint finish. The message inside reads Merry Christmas, Rosie! / Rest easy, dream sweetly, and have the merriest of holidays. / Love, Nora. The card has a live block: at least the lantern's flame glows (and flares when tapped), and the fawn moves (breathing, an ear twitching), placed using grid.py's pixel grid. The reply tells the user how to open and share the file.
+context:
+  scaffold_script: place-files.sh

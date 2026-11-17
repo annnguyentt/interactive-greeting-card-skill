@@ -1,0 +1,329 @@
+{
+  "title": "Lantern Light",
+  "description": "A painted Christmas card that comes alive. Tap the lantern, the cat, the branch.",
+  "image": "lantern.webp",
+  "alt": "A painting of a white cat in a red scarf beside a glowing lantern in the snow, under a crescent moon and a snowy branch of red berries.",
+  "name": "Lantern Light",
+  "finish": "paint",
+  "message": "Dear Ellie,\nWishing you a cozy glow\nall winter long.\nLove, Nora",
+  "back": [
+    "Lantern Light",
+    "Merry Christmas"
+  ],
+  "live": {
+    "glows": [
+      {
+        "at": [
+          529,
+          872
+        ],
+        "r": 19,
+        "reach": 311,
+        "color": [
+          1,
+          0.69,
+          0.34
+        ],
+        "kind": "flame",
+        "rake": 1.1,
+        "halo": 0.55,
+        "emit": 1,
+        "wash": 0.05,
+        "rays": 5,
+        "raysIdle": 0,
+        "rayLight": 0.5,
+        "glint": {
+          "size": 0.034,
+          "points": 0.25,
+          "rest": 0.25
+        },
+        "tap": [
+          531,
+          849,
+          66
+        ]
+      },
+      {
+        "at": [
+          277,
+          310
+        ],
+        "r": 32,
+        "reach": 189,
+        "color": [
+          1,
+          0.9,
+          0.62
+        ],
+        "kind": "breathe",
+        "rake": 0.35,
+        "halo": 0.1,
+        "emit": 0.4,
+        "wash": 0.015
+      }
+    ],
+    "movers": {
+      "tail": {
+        "pivot": [
+          342,
+          971
+        ],
+        "tip": [
+          210,
+          949
+        ],
+        "width": 34,
+        "soft": 0.45,
+        "sway": [
+          4,
+          0.3
+        ],
+        "kick": 14,
+        "wind": 1
+      },
+      "earL": {
+        "pivot": [
+          341,
+          736
+        ],
+        "tip": [
+          339,
+          709
+        ],
+        "width": 19,
+        "soft": 0.5,
+        "twitch": [
+          20,
+          4,
+          9
+        ],
+        "react": "twitch",
+        "wind": 0.5
+      },
+      "eye": {
+        "pivot": [
+          432,
+          753
+        ],
+        "area": [
+          432,
+          753,
+          10,
+          10
+        ],
+        "soft": 0.5,
+        "blink": [
+          2.5,
+          6
+        ],
+        "react": "blink"
+      },
+      "scarf": {
+        "pivot": [
+          336,
+          830
+        ],
+        "tip": [
+          232,
+          877
+        ],
+        "width": 66,
+        "soft": 0.4,
+        "flutter": [
+          5.7,
+          0.6,
+          160
+        ],
+        "react": "flutter",
+        "wind": 1
+      },
+      "branch": {
+        "pivot": [
+          807,
+          155
+        ],
+        "area": [
+          595,
+          306,
+          245,
+          208
+        ],
+        "soft": 0.35,
+        "sway": [
+          0.8,
+          0.18
+        ],
+        "kick": 3,
+        "wind": 0.5
+      },
+      "moon": {
+        "pivot": [
+          288,
+          302
+        ],
+        "area": [
+          288,
+          302,
+          87,
+          96
+        ],
+        "cut": true,
+        "sway": [
+          3,
+          0.12
+        ],
+        "kick": 8
+      },
+      "gift": {
+        "pivot": [
+          650,
+          987
+        ],
+        "area": [
+          650,
+          924,
+          76,
+          66
+        ],
+        "soft": 0.3,
+        "react": "jiggle"
+      }
+    },
+    "taps": [
+      {
+        "area": [
+          388,
+          863,
+          99,
+          174
+        ],
+        "kick": [
+          "tail",
+          "earL",
+          "eye"
+        ],
+        "hearts": [
+          388,
+          712
+        ]
+      },
+      {
+        "area": [
+          595,
+          306,
+          208,
+          179
+        ],
+        "kick": [
+          "branch"
+        ],
+        "snow": [
+          [
+            463,
+            235
+          ],
+          [
+            539,
+            188
+          ],
+          [
+            623,
+            164
+          ],
+          [
+            586,
+            278
+          ]
+        ]
+      },
+      {
+        "area": [
+          288,
+          302,
+          76,
+          87
+        ],
+        "kick": [
+          "moon"
+        ],
+        "twinkle": [
+          [
+            207,
+            222
+          ],
+          [
+            355,
+            214
+          ]
+        ]
+      },
+      {
+        "area": [
+          650,
+          924,
+          71,
+          62
+        ],
+        "kick": [
+          "gift"
+        ],
+        "sparkle": [
+          [
+            652,
+            877
+          ]
+        ]
+      }
+    ],
+    "greet": [
+      "tail",
+      "earL"
+    ],
+    "lifted": [
+      {
+        "box": [
+          222,
+          226,
+          133,
+          154
+        ],
+        "lift": 0.007,
+        "bob": 0.0025,
+        "ride": "moon"
+      }
+    ],
+    "snow": {
+      "area": [
+        114,
+        136,
+        679,
+        906
+      ],
+      "count": 30,
+      "size": [
+        0.5,
+        0.95
+      ],
+      "fall": [
+        22,
+        46
+      ],
+      "lift": [
+        0.012,
+        0.04
+      ]
+    },
+    "shooting": {
+      "area": [
+        142,
+        155,
+        311,
+        245
+      ],
+      "every": [
+        6,
+        12
+      ]
+    }
+  }
+}

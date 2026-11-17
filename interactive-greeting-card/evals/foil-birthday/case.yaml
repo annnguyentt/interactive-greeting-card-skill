@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: foil-birthday
+expected_outcome: |
+  A single self-contained HTML card page built with the skill's make_card.py. The card uses the foil finish in gold, with the lettering turned to foil by picking its colour (foil.on "colour" with pick or pickAt on the gold lettering), rather than every detail of the flowers. The message reads Happy birthday Theo! / Another year of being absolutely cute. / xx Max. The reply tells the user how to open and share the file.
+context:
+  scaffold_script: place-files.sh

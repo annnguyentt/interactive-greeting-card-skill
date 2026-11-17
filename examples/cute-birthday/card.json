@@ -1,0 +1,24 @@
+{
+  "title": "Happy birthday, Theo!",
+  "image": "absolutely-cute.webp",
+  "alt": "Gold foil lettering, You're absolutely cute, over a meadow of watercolour tulips, irises and daffodils with gold leaves.",
+  "name": "You're Absolutely Cute",
+  "finish": "foil",
+  "foil": {
+    "colour": "gold",
+    "on": "colour",
+    "pick": [208, 146, 21],
+    "amount": 0.4,
+    "area": [130, 150, 660, 360]
+  },
+  "paper": "white",
+  "message": "Happy birthday, Theo!\nAnother year of being\nabsolutely cute.\nxx Max",
+  "signature": [
+    "Made with love by",
+    "Max"
+  ],
+  "effects": {
+    "sparkle": true,
+    "hearts": true
+  }
+}
